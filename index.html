@@ -5,10 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torque</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header>
+        <!-- navigation -->
+        <div class="logo">
+            <a href="">Torque<span>Camp</span></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="#">Learning</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Divisi</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Faq</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="user">
+            <a href=""><i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
 
+
+
+    <main>
+        <!-- section1 -->
+        <div class="container">
+            <div class="content">
+                <div class="article-1">
+                    <h2>About US</h2>
+                    <img src="/assets/monitor.png" alt="">
+                    <p>TorqueCamp adalah sebuah website belajar online,
+                        yang bertujuan membantu orang orang untuk belajar membangun website, dengan membagi tugas setiap
+                        divisi dalam 1 team yang terdiri dari 3 divisi utama.
+                    </p>
+                </div>
+                <div class="article-2">
+                    <h2>Divisi</h2>
+                    <div class="divisi">
+                        <div class="divisi-front-end">
+                            <img src="/assets/frontend.png" alt="">
+                            <h3>1. Front End</h3>
+                            <span id="frontend"></span>
+                            <div class="button-group">
+                                <button onclick="frontendmore()">Show More</button>
+                                <button onclick="frontendless()">Show Less</button>
+                            </div>
+                        </div>
+                        <div class="divisi-back-end">
+                            <img src="/assets/backend.png" alt="">
+                            <h3>2. Back End</h3>
+                            <p id="backend"></p>
+                            <button onclick="backendmore()">Show More</button>
+                            <button onclick="backendless()">Show Less</button>
+                        </div>
+                        <div class="divisi-uiux">
+                            <img src="/assets/uiux.png" alt="">
+                            <h3>3. UI /UX</h3>
+                            <p id="uiux"></p>
+                            <button onclick="uiuxmore()">Show More</button>
+                            <button onclick="uiuxless()">Show Less</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <aside>
+                <div class="profile">
+                    <img id="picture" src="assets/maulana.jpg" alt="">
+                    <div>
+                        <h4>Nama : Maulana Irfan Firdian</h4>
+                        <h4>Umur : 19 tahun</h4>
+                        <h4>Agama : Islam</h4>
+                        <h4>Jenis Kelamin : Laki-Laki</h4>
+                        <h4>Kota : BandarLampung</h4>
+                        <h4>Kuliah : TelkomUniversity</h4>
+                        <h4>Cita Cita : Menjadi Front-End Develop</h4>
+                    </div>
+                    <button onclick="change1()">Change Picture</button>
+                    <button onclick="change2()">Change Again</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div>
+            <h3>Copyright @ 2020 - TorqueCamp</h3>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </body>
 
 </html>
