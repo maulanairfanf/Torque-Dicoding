@@ -1,5 +1,6 @@
 /* universal */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 
 body {
@@ -7,6 +8,7 @@ body {
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #457b9d;
 }
 
 ul {
@@ -22,8 +24,9 @@ a:hover {
     color: #ffffff;
     font-size: 20px;
     transition: 1s ease;
-
 }
+
+
 
 h2 {
     font-size: 30px;
@@ -46,7 +49,6 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     transition: 1s ease;
-
 }
 
 .logo,
@@ -62,6 +64,11 @@ header {
     flex: 1;
     align-self: center;
     font-size: 36px;
+}
+
+.logo span {
+    color: #bec2fa;
+    font-family: 'Lora', serif;
 }
 
 nav {
@@ -92,6 +99,7 @@ main {
     float: left;
     width: 100%;
     padding: 1em;
+    color: #ffffff;
 }
 
 
@@ -123,7 +131,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative;
+    /* position: relative; */
+    flex-wrap: wrap;
 }
 
 .divisi-front-end,
@@ -151,19 +160,19 @@ main {
 
 button {
     cursor: pointer;
-    background-color: white;
+    background-color: #457b9d;
     /* padding: 1em; */
     border: none;
     outline: none;
     font-size: 16px;
-    color: #00a6fb;
+    color: #ffffff;
     font-weight: bold;
     font-family: 'Nunito Sans', sans-serif;
     transition: 1s ease;
 }
 
 button:hover {
-    color: #0582ca;
+    color: #d5d9d8;
     font-size: 18px;
 }
 
@@ -181,7 +190,7 @@ button:hover {
     border-radius: 15px;
     transition: 1s;
     width: 80%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
     margin-bottom: 15%;
 }
 
@@ -199,10 +208,10 @@ button:hover {
     width: 60%;
 }
 
-.profile button{
+.profile button {
     padding: 1em;
     border-radius: 15px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -213,15 +222,17 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #457b9d;
-    color: white;
+    background-color: #ffff;
+    color: #457b9d;
+    font-weight: lighter;
 }
 
-footer h3{
+footer h3 {
     font-size: 14px;
+    padding: 1em;
 }
 
-@media screen and (max-width:1230px) {
+@media screen and (max-width:768px) {
     .container {
         flex-wrap: wrap;
     }
@@ -237,10 +248,10 @@ footer h3{
         margin-bottom: 5%;
     }
 
-    .divisi {
+    /* .divisi {
         display: flex;
         flex-wrap: wrap;
-    }
+    } */
 
     header {
         font-size: 10px;
@@ -258,10 +269,12 @@ footer h3{
     footer h3 {
         font-size: 16px;
     }
-    .profile{
-        margin-right:8%;
+
+    .profile {
+        margin-right: 8%;
     }
-    .profile button{
+
+    .profile button {
         margin-bottom: 5%;
     }
 }
