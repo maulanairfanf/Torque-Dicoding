@@ -142,8 +142,8 @@ main {
 }
 
 .article-2 img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     transition: 1s ease;
 }
 
@@ -172,7 +172,7 @@ button {
 }
 
 button:hover {
-    color: #d5d9d8;
+    color: #F8F8FF;
     font-size: 18px;
 }
 
